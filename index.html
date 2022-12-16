@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>WOW - design</title>
+  <meta name="title" content="WOW - design">
+
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+
+</head>
+
+<body>
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="./assets/images/logo.svg" width="209" height="52" alt="dprod logo">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <p class="navbar-title">Меню</p>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link" data-nav-link>Главная</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#about" class="navbar-link" data-nav-link>О нас</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#services" class="navbar-link" data-nav-link>Услуги</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#blog" class="navbar-link" data-nav-link>Блог</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+      <a href="#" class="btn btn-primary">Наши контакты</a>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero" id="home" aria-label="home">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <h1 class="h1 section-title">
+              ddrop - <span class="span">дизайн</span> вашего бизнеса
+            </h1>
+
+            <p class="section-text">
+              Создавайте живые сегменты и ориентируйтесь на нужных людей.
+            </p>
+
+            <button class="btn btn-secondary">Начинаем</button>
+
+          </div>
+
+          <figure class="hero-banner has-shape">
+
+            <img src="./assets/images/hero-banner.png" width="521" height="675" alt="hero banner" class="w-100">
+
+            <img src="./assets/images/hero-shape-1.svg" width="106" height="78" alt="" class="shape">
+
+          </figure>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SERVICES
+      -->
+
+      <section class="section service has-shape" id="services" aria-label="service">
+        <div class="container">
+
+          <div class="title-wrapper">
+            <h2 class="h2 section-title">
+              У нас лучшие <span class="span">услуги.</span>
+            </h2>
+
+            <p class="section-text">
+              Поможем вашему бизнесу обрести лучшие краски в четыре шага:
+            </p>
+          </div>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="service-card">
+
+                <figure class="card-icon">
+                  <img src="./assets/images/service-1.svg" width="60" height="60" loading="lazy" alt="service icon">
+                </figure>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Приложение</a>
+                </h3>
+
+                <p class="card-text">
+                  Разрабатываем профессиональный, но простой логотип.
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <figure class="card-icon">
+                  <img src="./assets/images/service-2.svg" width="60" height="60" loading="lazy" alt="service icon">
+                </figure>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Стратегия</a>
+                </h3>
+
+                <p class="card-text">
+                  Выстроим стратегию, которая будет приносить прибыль
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <figure class="card-icon">
+                  <img src="./assets/images/service-3.svg" width="60" height="60" loading="lazy" alt="service icon">
+                </figure>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Дизайн</a>
+                </h3>
+
+                <p class="card-text">
+                  Сделаем яркий запоминающийся дизайн вашего проекта
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <figure class="card-icon">
+                  <img src="./assets/images/service-4.svg" width="60" height="60" loading="lazy" alt="service icon">
+                </figure>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Маркетинг</a>
+                </h3>
+
+                <p class="card-text">
+                  Проведем масштабную рекламу и о вас узнают тысячи клиентов
+                </p>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <img src="./assets/images/circle-shape.svg" width="158" height="158" loading="lazy" alt=""
+            class="shape shape-1">
+
+          <img src="./assets/images/triangle-shape-1.svg" width="158" height="158" loading="lazy" alt=""
+            class="shape shape-2">
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about" id="about" aria-label="about">
+        <div class="container">
+
+          <figure class="about-banner has-shape">
+            <img src="./assets/images/about-banner.png" width="500" height="611" loading="lazy" alt="about banner"
+              class="w-100">
+
+            <img src="./assets/images/banner-shape.svg" width="108" height="86" loading="lazy" alt="" class="shape">
+          </figure>
+
+          <div class="about-content">
+
+            <h2 class="h2 section-title">
+              Мы помогаем клиентам<span class="span"></span> по всему миру.
+            </h2>
+
+            <p class="section-text">
+              Поможем повысить узнаваемость вашего бренда 
+            </p>
+
+            <a href="#" class="btn btn-outline">Подробнее</a>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #PROJECT
+      -->
+
+      <section class="section project" aria-label="project">
+        <div class="container">
+
+          <div class="title-wrapper">
+
+            <div>
+              <h2 class="h2 section-title">
+                Наши последние <span class="span">проекты</span>.
+              </h2>
+
+              <p class="section-text">
+                Мы помогли уже более 100 компаниям и улучшили их дизайн
+              </p>
+            </div>
+
+            <a href="#" class="btn-link">
+              <span class="span">Смотреть все проекты</span>
+
+              <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+            </a>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li>
+              <div class="project-card">
+
+                <figure class="card-banner img-holder" style="--width: 615; --height: 391;">
+                  <img src="./assets/images/project-1.png" width="615" height="391" loading="lazy"
+                    alt="Plastic Credit Card" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div>
+                    <h3 class="h3">
+                      <a href="#" class="card-title hover:underline">Кредитные карты</a>
+                    </h3>
+
+                    <p class="card-tag">Мокап</p>
+                  </div>
+
+                  <a href="#" class="card-link" aria-label="product details">
+                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="project-card">
+
+                <figure class="card-banner img-holder" style="--width: 615; --height: 391;">
+                  <img src="./assets/images/project-2.png" width="615" height="391" loading="lazy" alt="3D Illustration"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div>
+                    <h3 class="h3">
+                      <a href="#" class="card-title hover:underline">3D иллюстрации</a>
+                    </h3>
+
+                    <p class="card-tag">Разработка приложений</p>
+                  </div>
+
+                  <a href="#" class="card-link" aria-label="product details">
+                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="project-card">
+
+                <figure class="card-banner img-holder" style="--width: 390; --height: 391;">
+                  <img src="./assets/images/project-3.png" width="390" height="391" loading="lazy"
+                    alt="Statistics Mobile App" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div>
+                    <h3 class="h3">
+                      <a href="#" class="card-title hover:underline">Приложение для статистики</a>
+                    </h3>
+
+                    <p class="card-tag">Разработка приложений</p>
+                  </div>
+
+                  <a href="#" class="card-link" aria-label="product details">
+                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="project-card">
+
+                <figure class="card-banner img-holder" style="--width: 390; --height: 391;">
+                  <img src="./assets/images/project-4.png" width="390" height="391" loading="lazy"
+                    alt="Color Blending Effect" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div>
+                    <h3 class="h3">
+                      <a href="#" class="card-title hover:underline">Дизайн компании</a>
+                    </h3>
+
+                    <p class="card-tag">Графический дизайн</p>
+                  </div>
+
+                  <a href="#" class="card-link" aria-label="product details">
+                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="project-card">
+
+                <figure class="card-banner img-holder" style="--width: 390; --height: 391;">
+                  <img src="./assets/images/project-5.png" width="390" height="391" loading="lazy" alt="3D Animation"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div>
+                    <h3 class="h3">
+                      <a href="#" class="card-title hover:underline">3D анимация</a>
+                    </h3>
+
+                    <p class="card-tag">Веб - дизайн</p>
+                  </div>
+
+                  <a href="#" class="card-link" aria-label="product details">
+                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #BLOG
+      -->
+
+      <section class="section blog" id="blog" aria-label="blog">
+        <div class="container">
+
+          <div class="title-wrapper">
+            <h2 class="h2 section-title">
+              Наши <span class="span">новости</span>.
+            </h2>
+
+            <a href="#" class="btn-link">
+              <span class="span">Читать все новости</span>
+
+              <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+            </a>
+          </div>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="blog-card">
+
+                <div class="card-banner img-holder" style="--width: 595; --height: 391;">
+                  <img src="./assets/images/blog-1.png" width="595" height="391" loading="lazy"
+                    alt="Designer's Checklist for Every UX Project." class="img-cover">
+
+                  <button class="card-tag">Макет</button>
+                </div>
+
+                <div class="card-content">
+
+                  <ul class="meta-list">
+
+                    <li class="meta-item">
+                      <img src="./assets/images/author-1.png" width="18" height="18" loading="lazy" alt="Alice Williams"
+                        class="author-img">
+
+                      <p class="meta-item-text">Виктор Савельев</p>
+                    </li>
+
+                    <li class="meta-item">
+                      <ion-icon name="calendar-clear-outline" aria-hidden="true"></ion-icon>
+
+                      <time datetime="2022-12-20" class="meta-item-text">Декабрь 20, 2022</time>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title hover:underline">
+                      Контрольный список дизайнера для каждого UX-проекта.
+                    </a>
+                  </h3>
+
+                  <a href="#" class="btn-link">
+                    <span class="span">Читать</span>
+
+                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <div class="card-banner img-holder" style="--width: 595; --height: 391;">
+                  <img src="./assets/images/blog-2.png" width="595" height="391" loading="lazy"
+                    alt="Designer's Checklist for Every UX Project." class="img-cover">
+
+                  <button class="card-tag">Макет</button>
+                </div>
+
+                <div class="card-content">
+
+                  <ul class="meta-list">
+
+                    <li class="meta-item">
+                      <img src="./assets/images/author-2.png" width="18" height="18" loading="lazy" alt="Jaxson Geldit"
+                        class="author-img">
+
+                      <p class="meta-item-text">Андрей Нижник</p>
+                    </li>
+
+                    <li class="meta-item">
+                      <ion-icon name="calendar-clear-outline" aria-hidden="true"></ion-icon>
+
+                      <time datetime="2022-12-20" class="meta-item-text">Март 15, 2022</time>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title hover:underline">
+                      Разработка WEB - сайтов
+                    </a>
+                  </h3>
+
+                  <a href="#" class="btn-link">
+                    <span class="span">Читать</span>
+
+                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <div class="card-banner img-holder" style="--width: 595; --height: 391;">
+                  <img src="./assets/images/blog-3.png" width="595" height="391" loading="lazy"
+                    alt="Designer's Checklist for Every UX Project." class="img-cover">
+
+                  <button class="card-tag">Макет</button>
+                </div>
+
+                <div class="card-content">
+
+                  <ul class="meta-list">
+
+                    <li class="meta-item">
+                      <img src="./assets/images/author-1.png" width="18" height="18" loading="lazy" alt="Cooper Saris"
+                        class="author-img">
+
+                      <p class="meta-item-text">Виктор Савельев</p>
+                    </li>
+
+                    <li class="meta-item">
+                      <ion-icon name="calendar-clear-outline" aria-hidden="true"></ion-icon>
+
+                      <time datetime="2022-12-20" class="meta-item-text">Январь 30, 2022</time>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title hover:underline">
+                      Редизайн IT компании
+                    </a>
+                  </h3>
+
+                  <a href="#" class="btn-link">
+                    <span class="span">Читать</span>
+
+                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer-top section">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="./assets/images/logo.svg" width="209" height="52" alt="dprod logo">
+          </a>
+
+          <a href="mailto:companyinfo@mail.com" class="footer-link">dprod@mail.com</a>
+
+          <a href="tel:+0987654321" class="footer-link">+098 765 4321</a>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-pinterest"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-dribbble"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="h4 footer-list-title">Ссылки</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">О компании</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Наши новости</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Услуги</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Команда</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Прайс</a>
+          </li>
+
+        </ul>
+
+
+      </div>
+
+      <div class="footer-bottom">
+
+        <p class="copyright">
+          dprod 2022 Все права защищены.
+        </p>
+
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
